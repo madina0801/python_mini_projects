@@ -8,7 +8,7 @@ while True:
 	user_choice = input("Rock/Paper/Scissors or !! to quit: ").lower()
 
 	if user_choice == "!!":
-		quit()
+		break
 
 	if user_choice not in options:
 		continue
@@ -19,7 +19,7 @@ while True:
 	computer_choice = options[random_num]
 	print("Computer choice is", computer_choice + '.')
 	
-	if user_choice == 'rock' and computer_choice == 'scissord':
+	if user_choice == 'rock' and computer_choice == 'scissors':
 		print("You won!")
 		user_score += 1
 
@@ -35,5 +35,6 @@ while True:
 		print("Computer won!")
 		computer_score += 1
 
-
+print("You won", user_score, "times.")
+print("Computer won", computer_score, "times.")
 print("Goodbye!")
