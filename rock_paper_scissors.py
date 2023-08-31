@@ -22,15 +22,18 @@ while True:
 	if user_choice == 'rock' and computer_choice == 'scissord':
 		print("You won!")
 		user_score += 1
-		continue
 
-	if user_choice == 'rock' and computer_choice == 'scissord':
+	elif user_choice == 'paper' and computer_choice == 'rock':
 		print("You won!")
 		user_score += 1
-		continue
 
-	if user_choice == 'rock' and computer_choice == 'scissord':
+	elif user_choice == 'scissors' and computer_choice == 'paper':
 		print("You won!")
 		user_score += 1
-		continue
 
+	else:
+		print("Computer won!")
+		computer_score += 1
+
+
+print("Goodbye!")
