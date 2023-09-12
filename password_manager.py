@@ -4,7 +4,7 @@ mode = input("Would you like to add a new password or view existing ones? (view/
 
 while True:
 	if mode == 'q':
-		quit
+		break
 	elif mode == 'view':
 		pass
 	elif mode == 'add':
